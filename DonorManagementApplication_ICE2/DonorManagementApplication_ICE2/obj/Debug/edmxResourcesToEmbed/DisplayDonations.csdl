@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DonationManagementSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DonationManagementSystemEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Donations" EntityType="DonationManagementSystemModel.Donation" />
+  </EntityContainer>
+  <EntityType Name="Donation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DonorName" Type="String" Nullable="false" />
+    <Property Name="DonorAmount" Type="String" Nullable="false" />
+    <Property Name="DonationDate" Type="String" Nullable="false" />
+    <Property Name="Cause" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>
